@@ -8,6 +8,7 @@ import Typewriter from "typewriter-effect";
     <div class="hero">
       <div class="flex-container">
         <div class="item">
+          <h1 class="name">🚫</h1>
           <h1 class="name">
             <Typewriter
               client:only="react"
@@ -29,7 +30,7 @@ import Typewriter from "typewriter-effect";
             />
           </h1>
         </div>
-        <div class="item"><h1 class="name">deme</h1></div>
+        <div class="item"><h1 class="name dont">deme</h1></div>
       </div>
       <span class="subtitle"
         >lütfen iletişim dilinde cinsiyet rolü barındıran ifadeler kullanma</span
@@ -159,6 +160,9 @@ import Typewriter from "typewriter-effect";
     font: inherit;
     vertical-align: baseline;
   }
+  h1.dont {
+    margin-left: 20px;
+  }
   .sections {
     vertical-align: top;
     display: inline-block;
@@ -199,6 +203,7 @@ import Typewriter from "typewriter-effect";
     display: inline-block;
     text-decoration-color: #fff;
   }
+
   .section-title {
     font-size: 28px;
     font-weight: 600;
