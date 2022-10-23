@@ -1,0 +1,317 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Typewriter from "typewriter-effect";
+---
+
+<Layout title="Welcome to Astro.">
+  <div class="container">
+    <div class="hero">
+      <div class="flex-container">
+        <div class="item">
+          <h1 class="name">
+            <Typewriter
+              client:only="react"
+              options={{
+                strings: [
+                  "abi",
+                  "kral",
+                  "kardeşim",
+                  "bro",
+                  "aga",
+                  "karşiim",
+                  "reyiz",
+                ],
+                autoStart: true,
+                loop: true,
+                cursorClassName: "typewriter-cursor",
+              }}
+            />
+          </h1>
+        </div>
+        <div class="item"><h1 class="name">deme</h1></div>
+      </div>
+      <span class="subtitle"
+        >lütfen iletişim dilinde cinsiyet barındıran ifadeler kullanma</span
+      >
+    </div>
+  </div>
+  <div class="container nonos">
+    <div class="sections sectionleft">
+      <h2 class="section-title">❌ Bunu yapma</h2>
+      <div class="list-card example one">
+        <div class="slack">
+          <img
+            alt="Keith's Slack avatar"
+            src="/boy_5.png"
+            width="128"
+            height="128"
+          />
+          <span class="slackname">Keith</span>
+          <span class="slacktime">2:15 PM</span><br />
+          <span class="slackmessage">selam abi</span>
+        </div>
+        <div class="slack">
+          <img
+            alt="Tim's Slack avatar"
+            src="/boy_1.png"
+            width="128"
+            height="128"
+          />
+          <span class="slackname">Tim</span>
+          <span class="slacktime">2:19 PM</span><br />
+          <span class="slackmessage">selamlar bro</span>
+        </div>
+        <div class="slack">
+          <img
+            alt="Keith's Slack avatar"
+            src="/boy_5.png"
+            width="128"
+            height="128"
+          />
+          <span class="slackname">Keith</span>
+          <span class="slacktime">2:20 PM</span><br />
+          <span class="slackmessage"
+            >bir mr vardı da mergeleyebilir misin abi?</span
+          >
+        </div>
+        <div class="slack">
+          <img
+            alt="Tim's Slack avatar"
+            src="/boy_1.png"
+            width="128"
+            height="128"
+          />
+          <span class="slackname">Tim</span>
+          <span class="slacktime">2:20 PM</span><br />
+          <span class="slackmessage">hemen hallediyorum bro</span>
+        </div>
+      </div>
+    </div>
+    <div class="sections sectionright">
+      <div class="list-card">
+        <div>
+          <p>
+            Bu iletişimde abi ve bro ibarelerini kaldırırsak anlamda hiçbir şey
+            değişmiyor. Bu ibareleri kaldırdığımızda işimizin yapılmayacağını ya
+            da saygısızlık olacağını düşünüyorsak bu büyük bir sorun.
+          </p>
+          <p>
+            <q
+              ><em>İki erkek konuşurken bu ifadeleri kullanmakta ne var ki?</em>
+            </q> diyebilirsiniz. Bu şekilde kestirip atmak doğru olmaz. Bu tarz ibarelerin
+            kullanılmamasına özen göstermezsek bu ibareler bir kültür olur. Kullanmayan
+            insanlar da bu kültüre ait değilmiş gibi yargılanabilir. Bu ibareleri
+            kullanarak normalleştirmeyelim.
+          </p>
+          <p>
+            İş arkadaşlarımızla bulunduğumuz bağlam iş olduğunda cinsiyet
+            ibarelerini kullanmayalım. Bu kullanımlarla kadınların omzuna bir
+            sorumluluk yüklüyoruz.
+          </p>
+          <p>
+            Sosyal hayatta dil kullanımı ve dil kullanımında kadına yüklediğimiz
+            sorumluluğa dair <em>Robin Lakoff</em> tarafından <em>1973</em> yılında
+            yazılan bir <a
+              href="https://web.stanford.edu/class/linguist156/Lakoff_1973.pdf"
+              >makale</a
+            >
+          </p>
+
+          <p>Benzeri örnekler:</p>
+          <ul>
+            <li>"Aga, müsaitliğin var mı?"</li>
+            <li>"Selam kardeşim"</li>
+            <li>"kral bizim bir iş vardı?"</li>
+            <li>etc.</li>
+          </ul>
+          <p>
+            <strong>Cinsiyet ve statü yükleyen ibareleri kullanma</strong> 👾
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container yesyes"></div>
+</Layout>
+
+<style>
+  div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  .sections {
+    vertical-align: top;
+    display: inline-block;
+    min-height: 50px;
+  }
+  .sectionleft {
+    width: 40%;
+  }
+  .sectionright {
+    width: 59%;
+  }
+  .subtitle {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    color: #81899c;
+    margin-top: 10px;
+  }
+  .hero {
+    margin: 70px auto 100px auto;
+    position: relative;
+  }
+  .container {
+    max-width: 1100px;
+    height: auto;
+    margin: 60px auto;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .item {
+  }
+
+  h1.name {
+    font-size: 94px;
+    font-weight: 700;
+    display: inline-block;
+    text-decoration-color: #fff;
+  }
+  .section-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .list-card.example {
+    -moz-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.46);
+    margin: 30px 80px 80px 0px;
+    padding: 25px 25px 10px 25px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: -20px 20px 60px #d9d9d9, 20px -20px 60px #ffffff;
+  }
+
+  .list-card .exp,
+  .list-card div {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .list-card .exp {
+    margin-right: 15px;
+    color: #4a90e2;
+    font-weight: 600;
+    width: 100px;
+  }
+
+  .list-card div {
+    width: 100%;
+  }
+
+  .list-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #5b6a9a;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
+
+  .list-card div p {
+    font-size: 18px;
+    color: #616061;
+    line-height: 24px;
+    margin-bottom: 22px;
+  }
+
+  .list-card div p:first-of-type {
+    margin-top: 55px;
+  }
+
+  .container ul {
+    list-style: none;
+    font-size: 18px;
+    color: #616061;
+    line-height: 24px;
+    margin-left: 20px;
+    margin-bottom: 16px;
+    margin-top: -20px;
+    opacity: 70%;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  .nonos ul li:before {
+    content: "×";
+    color: red;
+    font-weight: bold;
+    padding-right: 10px;
+    opacity: 100% !important;
+  }
+
+  .yepyep ul li:before {
+    content: "✓";
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+    padding-right: 10px;
+    opacity: 100% !important;
+  }
+
+  .slack {
+    padding-bottom: 15px;
+  }
+
+  .slack img {
+    width: 42px;
+    height: 42px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .slack .slackname {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1d1c1d;
+  }
+
+  .slack .slacktime {
+    font-size: 14px;
+    color: #616061;
+  }
+
+  .slack .slackmessage {
+    font-size: 16px;
+    color: #1d1c1d;
+  }
+
+  .card {
+    width: 47.9%;
+    height: 200px;
+    background-color: #eef0f7;
+    display: inline-block;
+    margin: 7px 5px;
+    vertical-align: top;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .card-active,
+  .card:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    background-color: #fff;
+    box-shadow: 0px 5px 50px -8px #ddd;
+    cursor: pointer;
+  }
+</style>
