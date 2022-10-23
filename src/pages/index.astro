@@ -39,7 +39,7 @@ import Typewriter from "typewriter-effect";
   <div class="container nonos">
     <div class="sections sectionleft">
       <h2 class="section-title">❌ Bunu yapma</h2>
-      <div class="list-card example one">
+      <div class="list-card example">
         <div class="slack">
           <img
             alt="Can's Slack avatar"
@@ -213,29 +213,14 @@ import Typewriter from "typewriter-effect";
     box-shadow: -20px 20px 60px #d9d9d9, 20px -20px 60px #ffffff;
   }
 
-  .list-card .exp,
+  .list-card,
   .list-card div {
     display: inline-block;
     vertical-align: top;
   }
 
-  .list-card .exp {
-    margin-right: 15px;
-    color: #4a90e2;
-    font-weight: 600;
-    width: 100px;
-  }
-
   .list-card div {
     width: 100%;
-  }
-
-  .list-card h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #5b6a9a;
-    line-height: 26px;
-    margin-bottom: 8px;
   }
 
   .list-card div p {
@@ -243,10 +228,6 @@ import Typewriter from "typewriter-effect";
     color: #616061;
     line-height: 24px;
     margin-bottom: 22px;
-  }
-
-  .list-card div p:first-of-type {
-    margin-top: 55px;
   }
 
   .container ul {
@@ -268,15 +249,6 @@ import Typewriter from "typewriter-effect";
     content: "×";
     color: red;
     font-weight: bold;
-    padding-right: 10px;
-    opacity: 100% !important;
-  }
-
-  .yepyep ul li:before {
-    content: "✓";
-    font-size: 14px;
-    font-weight: bold;
-    color: green;
     padding-right: 10px;
     opacity: 100% !important;
   }
@@ -307,26 +279,5 @@ import Typewriter from "typewriter-effect";
   .slack .slackmessage {
     font-size: 16px;
     color: #1d1c1d;
-  }
-
-  .card {
-    width: 47.9%;
-    height: 200px;
-    background-color: #eef0f7;
-    display: inline-block;
-    margin: 7px 5px;
-    vertical-align: top;
-    border-radius: 10px;
-    text-align: center;
-    padding-top: 50px;
-  }
-
-  .card-active,
-  .card:hover {
-    transform: scale(1.02);
-    transition: 0.5s;
-    background-color: #fff;
-    box-shadow: 0px 5px 50px -8px #ddd;
-    cursor: pointer;
   }
 </style>
