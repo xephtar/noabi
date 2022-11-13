@@ -13,6 +13,14 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="to encourage the non sexist language at work"
+    />
+    <meta name="og:title" property="og:title" content={title} />
+    <meta name="twitter:card" content="the non sexist language at work" />
+    <link rel="canonical" href="https://www.nonsexistlanguage.info/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
   </head>
   <body>
