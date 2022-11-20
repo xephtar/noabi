@@ -751,6 +751,11 @@ ast-types@0.14.2:
   dependencies:
     tslib "^2.0.1"
 
+astro-google-analytics@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/astro-google-analytics/-/astro-google-analytics-1.0.2.tgz#10328124757785bc64903cefe55fe6d77c241c58"
+  integrity sha512-Uk0BSV3t+w3e/N88SWBKgslEjgYhi7r/bBppvfa2GZDG29YblZ0tSFCY8G4fjDlLPnH7cVkkvM3OIxrn6wrr8A==
+
 astro@^1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/astro/-/astro-1.5.2.tgz#c4c66855b184e4b5191f988eb67dd2dffb3ac6ad"
